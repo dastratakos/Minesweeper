@@ -11,12 +11,14 @@ def run_solver(n, num_mines, num_trials, animate):
             wins += 1
 
         current_percentage = (i + 1) * 100 // num_trials
-        print(f'\r{current_percentage}% complete ({i+1}/{num_trials})', end='')
+        if not animate:
+            print(f'\r{current_percentage}% complete ({i+1}/{num_trials})', end='')
 
-    finish_time = time.time()
-    print()
-    print(f'Time taken: {finish_time - start_time:.2f}s')
-    print(f'Win percentage: {wins * 100 / num_trials:.2f}% ({wins}/{num_trials})')
+    if not animate:
+        finish_time = time.time()
+        print()
+        print(f'Time taken: {finish_time - start_time:.2f}s')
+        print(f'Win percentage: {wins * 100 / num_trials:.2f}% ({wins}/{num_trials})')
 
 def parse_args():
     parser = argparse.ArgumentParser()

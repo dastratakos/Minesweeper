@@ -19,12 +19,14 @@ def solve(board, animate=False) -> bool:
     lastLoopHadZeroMoves = False
     
     # grid cells that will not give any more info and should not be checked
-    done = [[False for row in range(board.n)] for col in range(board.n)]
+    done = [[False for _ in range(board.n)] for _ in range(board.n)]
     
     while not board.lost and not board.won:
         # on the first move, choose the middle of the grid
         if firstMove:
             firstMove = False
+            board.printState(board.printBoard)
+            if animate: time.sleep(1)
             board.move((int(board.n / 2), int(board.n / 2)))
             continue
             

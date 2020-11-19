@@ -61,7 +61,7 @@ Note: the solver supports an animation of the solution. The animation looks
 awesome with the following input:
 
 ```sh
-python3 run_solver.py 30 90 1
+python3 run_solver.py 30 90 1 -a
 ```
 
 My solver follows two main logic rules to find a set of moves to make:

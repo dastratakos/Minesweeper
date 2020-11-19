@@ -270,7 +270,8 @@ class Board:
     '''
     def printBoard(self, i, j):
         if self.grid[i][j] == 'safe':
-            print('\u25A0', end = ' ') # ■
+            print('  ', end='')
+            # print('\u25A0', end = ' ') # ■
         elif self.grid[i][j] == 'covered':
             print('\U00002B1C', end = '') # ⬜
         elif self.grid[i][j] == 'flagged':
@@ -286,7 +287,8 @@ class Board:
     '''
     def printGameOverBoard(self, i, j):
         if self.grid[i][j] == 'safe':
-            print('\u25A0', end = ' ') # ■
+            print('  ', end='')
+            # print('\u25A0', end = ' ') # ■
         elif self.grid[i][j] == 'lost':
             print('\U0001F92F', end = '') # 🤯
         elif self.grid[i][j] == 'covered' or self.grid[i][j] == 'flagged':
