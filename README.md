@@ -1,8 +1,7 @@
 # Minesweeper
 
-### February 2, 2020
-
 ## Dean Stratakos
+### February 2, 2020
 
 In this project, I implemented the classic
 [**Minesweeper**](https://en.wikipedia.org/wiki/Microsoft_Minesweeper) game in
