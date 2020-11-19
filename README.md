@@ -1,5 +1,7 @@
 # Minesweeper
 
+### February 2, 2020
+
 ## Dean Stratakos
 
 In this project, I implemented the classic
